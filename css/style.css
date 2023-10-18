@@ -4,6 +4,7 @@
     left: 0;
     top: 0;
     position: absolute;
+    overflow: scroll;
 }
 
 .gradiente{
@@ -15,7 +16,11 @@
 }
 
 .atomo{
-    height: 85%;
+    width: 90vh;
+    height: 95vh;
+    position: inherit;
+    padding-right: 2vw;
+    overflow: visible;
 }
 
 .titulo{
@@ -27,6 +32,7 @@
     margin-left: 5vw;
     margin-top: 20vh;
     line-height: 100%;
+    width: 50vw;
 }
 
 .subtitulo{
@@ -37,6 +43,7 @@
     font-size: 3.5vh;
     margin-left: 5vw;
     margin-top: 45vh;
+    width: 50vw;
 }
 
 .texto{
@@ -50,4 +57,91 @@
     height: 70vh;
     float:left;
     background-color:#74B4FF;
+    padding-right: 20vw;
+}
+
+.categorias{
+    padding-left: 2vw;
+    padding-right: 0.2vw;
+    font-weight: bolder; 
+}
+/* fazer media query pra 480 */
+ @media(max-width:500px){
+    .atomo{
+        width: 20vh;
+        height: 20vh;
+        position: inherit;
+        padding-right: 2vw;
+        overflow: visible;
+    }
+    .titulo{
+        position: absolute;
+        font-family: 'Jost', sans-serif;
+        color: white;
+        font-weight:600;
+        font-size: 1vh;
+        margin-left: 4vw;
+        margin-top: 7vh;
+        line-height: 100%;
+        color: red;
+        width: 50vw;
+        padding: 2vw;
+    }
+    .gradiente{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: block;
+        background: linear-gradient(180deg, #74B4FF 67.55%, #74b4ff00 100%);
+    }
+    .subtitulo{
+        position: absolute;
+        font-family: 'Jost', sans-serif;
+        color: white;
+        font-weight:bold;
+        font-size: 2vh;
+        margin-left: 5vw;
+        margin-top: 22vh;
+        width: 80vw;
+    }
+}
+
+@media(max-width:700px){
+    .atomo{
+        width: 40vh;
+        height: 40vh;
+        position: inherit;
+        padding-right: 2vw;
+        overflow: visible;
+        margin-top: 5vh;
+    }
+    .titulo{
+        position: absolute;
+        font-family: 'Jost', sans-serif;
+        color: white;
+        font-weight:600;
+        font-size: 6vh;
+        margin-left: 4vw;
+        margin-top: 9vh;
+        line-height: 100%;
+        color: white;
+        width: 50vw;
+    }
+    .gradiente{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        display: block;
+        background: linear-gradient(180deg, #74B4FF 67.55%, #74b4ff00 100%);
+    }
+    .subtitulo{
+        position: absolute;
+        font-family: 'Jost', sans-serif;
+        color: white;
+        font-weight:bold;
+        font-size: 2vh;
+        margin-left: 5vw;
+        margin-top: 29vh;
+        width: 50vw;
+    }
 }
